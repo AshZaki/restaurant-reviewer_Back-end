@@ -1,4 +1,4 @@
 class RestaurantSerializer < ActiveModel::Serializer
-  attributes :id, :name, :type, :address, :city, :state, :zipcode, :restaurant_rating, :cuisine
+  attributes :id,:place_id, :name, :address, :rating
   has_many :reviews
 end
